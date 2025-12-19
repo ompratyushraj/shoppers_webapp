@@ -30,7 +30,7 @@ The application allows users to browse products, add items to their cart, and co
 ## Authentication Flow
 
 ### Signup
-Users must register to make purchases.  
+- Users must register to make purchases.  
 ![Signup Page](https://user-images.githubusercontent.com/93375038/146685540-9bb9e3c2-fda7-4817-a3a9-31abc9a2ecc2.png)
 
 ### Login
