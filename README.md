@@ -20,10 +20,16 @@ The application allows users to browse products, add items to their cart, and co
 ---
 
 ## Technologies Used
-- **Frontend:** HTML, CSS, JavaScript, Local Storage, API calls  
+- **Frontend:** HTML, CSS, JavaScript (ES6+), Local Storage, API calls, Dynamic DOM manipulation  
 - **Backend:** Node.js, Express.js, MongoDB, Mongoose, Passport.js, JWT Authentication  
 - **Tools & Libraries:** bcrypt, dotenv, cors, express-validator, uuid  
 
+## Additional Tools
+- **ES Modules (`import/export`)**
+- **LocalStorage** – Client-side data persistence
+- **Fetch API** – Network requests
+- **Google Fonts & Font Awesome** – UI icons and typography
+- **Live Server (VS Code Extension)** – Local development server
 
 ---
 
@@ -108,7 +114,126 @@ During the project, we gained experience in:
    - Encrypting passwords with bcrypt  
    - Preventing secret exposure with GitHub push protection  
 
+## Concepts Learned
+
+### Frontend Development
+- DOM manipulation
+- Event handling
+- Dynamic HTML rendering
+- Client-side routing
+- Responsive design
+
+### JavaScript
+- ES6 modules
+- Arrow functions
+- Async/Await
+- Fetch API
+- Closures and scope
+- Conditional rendering
+
+### Web Development Practices
+- Modular file organization
+- Separation of concerns
+- UI state management
+- Error handling
+- LocalStorage usage
+
+### Real-World Skills
+- Building scalable UI
+- Debugging import errors
+- Handling API responses
+- Managing authentication flow
+- Working with third-party APIs
+
 ---
+
+## Required Configurations to Run in VS Code
+
+### Why a Local Server Is Needed
+- The project uses ES Modules (`import/export`) and Fetch API.
+- Browsers block these features when opening HTML files directly.
+- A **local development server** is required.
+
+---
+
+### Step-by-Step Setup
+
+# Frontend Setup
+1. **Install VS Code**  
+   Download and install Visual Studio Code.
+
+2. **Install Live Server Extension**  
+   - Open VS Code → Extensions → Search: **Live Server** → Install
+
+3. **Open the Project Folder**  
+   - Open `team-shoppersstop` as a folder in VS Code
+
+4. **Check JS Imports**  
+   Ensure all JS imports use **relative paths**:
+   ```js
+   import navbar from "./scripts/navbarAndFooter.js";
+5. Start the Server
+   - Right-click index.html → Open with Live Server
+   - Runs at: http://127.0.0.1:5500
+  
+# Backend Setup for Shoppers API
+
+## 1. Prerequisites
+
+Before running the backend, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v16 or later recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+- [MongoDB](https://www.mongodb.com/) (local or remote instance)
+
+---
+
+## 2. Clone or Download the Project
+
+```bash
+git clone <your-repository-url>
+cd shoppers_api
+```
+## 3. Install Dependencies
+
+   Run the following command to install all necessary packages listed in package.json
+   ```bash
+npm install
+```
+## 4. Dependencies
+
+Install the following dependencies for your project:
+
+- `express` - Web framework for building REST APIs  
+- `mongoose` - MongoDB object modeling  
+- `bcrypt` - Password hashing  
+- `jsonwebtoken` - JWT authentication  
+- `passport` and `passport-google-oauth2` - Google OAuth login  
+- `cors` - Cross-Origin Resource Sharing  
+- `dotenv` - Load environment variables  
+- `uuid` - Generate unique IDs  
+- `express-validator` - Request validation middleware  
+
+## 5. Configure Environment Variables
+
+Create a `.env` file in the root of your project (already partially provided) and add your credentials:
+
+```env
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+GOOGLE_CALLBACK_URL=http://localhost:1234/auth/google/callback
+MONGODB_URI=mongodb://127.0.0.1:27017/db-name
+```
+- Replace your_google_client_id and your_google_client_secret with credentials from your Google Developer Console API's project.
+- Replace db-name with your MongoDB database name.
+
+## 6. Run the Backend Server
+- Use the server script defined in package.json:
+```
+npm run server
+```
+   The server automatically reloads on file changes.
+   By default, the server listens on: http://localhost:1234.
 
 ## Future Enhancements
 - Integration of payment gateways  
@@ -117,3 +242,4 @@ During the project, we gained experience in:
 - Email notifications for orders  
 
 ---
+
