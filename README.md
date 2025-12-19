@@ -36,32 +36,30 @@ Users must register to make purchases.
 ### Login
 After signing up, users log in to access the home page.
 
----
-
 ## Product Purchase Flow
-
 ### Browsing Products
-Users select a product category via the navbar, which redirects them to the product page.  
+- Users select a product category via the navbar, which redirects them to the product page.  
+
 ![Product Listing](https://user-images.githubusercontent.com/93375038/146685609-95b4af73-03e7-4dba-9a0a-7aa00e5c5a22.png)
 
 ### Sorting & Adding to Cart
-Users can sort products by brand, color, price, or discount and add desired items to the cart.  
+- Users can sort products by brand, color, price, or discount and add desired items to the cart.  
 ![Sorting and Cart](https://user-images.githubusercontent.com/93375038/146685663-54099097-3e4d-4a89-9812-17105a600641.png)
 
 ### Cart & Checkout
-Cart page displays selected items and total bill.  
+- Cart page displays selected items and total bill.  
 ![Cart & Checkout](https://user-images.githubusercontent.com/93375038/146685690-88b28b68-3661-4c10-bfb2-192f580e3acc.png)
 
 ### Delivery Address
-Users input their delivery address during checkout.  
+- Users input their delivery address during checkout.  
 ![Delivery Address](https://user-images.githubusercontent.com/93375038/146685712-7ecb0255-c07c-4c89-a2f3-66d3c4cead39.png)
 
 ### Payment
-Users enter payment information to complete the purchase.  
+- Users enter payment information to complete the purchase.  
 ![Payment Page](https://user-images.githubusercontent.com/93375038/146685731-8be4906b-f979-4db0-86ed-9c4357ab60c8.png)
 
 ### Order Completion
-Upon successful payment, the order is placed, and users are redirected to the home page.
+- Upon successful payment, the order is placed, and users are redirected to the home page.
 
 ---
 
