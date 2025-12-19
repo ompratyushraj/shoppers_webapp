@@ -156,9 +156,9 @@ During the project, we gained experience in:
 
 ---
 
-### Step-by-Step Setup
+## Step-by-Step Setup
 
-# Frontend Setup
+### Frontend Setup
 1. **Install VS Code**  
    Download and install Visual Studio Code.
 
@@ -166,19 +166,15 @@ During the project, we gained experience in:
    - Open VS Code → Extensions → Search: **Live Server** → Install
 
 3. **Open the Project Folder**  
-   - Open `team-shoppersstop` as a folder in VS Code
+   - Open `shoppersstop app` as a folder in VS Code
 
-4. **Check JS Imports**  
-   Ensure all JS imports use **relative paths**:
-   ```js
-   import navbar from "./scripts/navbarAndFooter.js";
-5. Start the Server
+4. Start the Server
    - Right-click index.html → Open with Live Server
-   - Runs at: http://127.0.0.1:5500
+   - Runs at: http://127.0.0.1:5500 (dummy)
   
-# Backend Setup for Shoppers API
+### Backend Setup for Shoppers API
 
-## 1. Prerequisites
+### 1. Prerequisites
 
 Before running the backend, ensure you have the following installed:
 
@@ -188,19 +184,19 @@ Before running the backend, ensure you have the following installed:
 
 ---
 
-## 2. Clone or Download the Project
+### 2. Clone or Download the Project
 
 ```bash
 git clone <your-repository-url>
 cd shoppers_api
 ```
-## 3. Install Dependencies
+### 3. Install Dependencies
 
    Run the following command to install all necessary packages listed in package.json
    ```bash
 npm install
 ```
-## 4. Dependencies
+### 4. Dependencies
 
 Install the following dependencies for your project:
 
@@ -214,7 +210,7 @@ Install the following dependencies for your project:
 - `uuid` - Generate unique IDs  
 - `express-validator` - Request validation middleware  
 
-## 5. Configure Environment Variables
+### 5. Configure Environment Variables
 
 Create a `.env` file in the root of your project (already partially provided) and add your credentials:
 
@@ -227,7 +223,7 @@ MONGODB_URI=mongodb://127.0.0.1:27017/db-name
 - Replace your_google_client_id and your_google_client_secret with credentials from your Google Developer Console API's project.
 - Replace db-name with your MongoDB database name.
 
-## 6. Run the Backend Server
+### 6. Run the Backend Server
 - Use the server script defined in package.json:
 ```
 npm run server
@@ -235,7 +231,7 @@ npm run server
    The server automatically reloads on file changes.
    By default, the server listens on: http://localhost:1234.
 
-## Future Enhancements
+### Future Enhancements
 - Integration of payment gateways  
 - Admin panel for product management  
 - Advanced search and filtering  
